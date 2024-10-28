@@ -216,7 +216,7 @@ button img {
 /* Container for Exclusive and Trending Places */
 .container {
     padding: 50px 7%;
-   /* background: url('https://images.pexels.com/photos/28986366/pexels-photo-28986366.jpeg?cs=srgb&dl=pexels-triemli-28986366.jpg&fm=jpg&_gl=1*uhdopw*_ga*MTY1OTU1NzM4MS4xNzI5MDkzMjQz*_ga_8JE65Q40S6*MTcyOTM1NTc3MC4xMC4xLjE3MjkzNTU4NTcuMC4wLjA.') center/cover no-repeat; */
+   background: url('https://images.pexels.com/photos/28986366/pexels-photo-28986366.jpeg?cs=srgb&dl=pexels-triemli-28986366.jpg&fm=jpg&_gl=1*uhdopw*_ga*MTY1OTU1NzM4MS4xNzI5MDkzMjQz*_ga_8JE65Q40S6*MTcyOTM1NTc3MC4xMC4xLjE3MjkzNTU4NTcuMC4wLjA.') center/cover no-repeat; 
     color: #fff;
 }
 
