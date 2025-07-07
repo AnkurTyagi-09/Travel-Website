@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb - Explore the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project 2 style.css">
+</head>
+<body>
+
+    <!-- Header Section with Background Video Slideshow -->
+<header class="header">
+    <video autoplay muted loop id="video1" class="bg-video">
+        <source src="https://videos.pexels.com/video-files/5896379/5896379-uhd_1440_2560_24fps.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video2" class="bg-video">
+        <source src="https://videos.pexels.com/video-files/19096561/19096561-uhd_2560_1440_24fps.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video3" class="bg-video">
+        <source src="https://videos.pexels.com/video-files/9783271/9783271-uhd_2560_1440_24fps.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video4" class="bg-video">
+        <source src="https://www.incredibleindia.gov.in/content/dam/incredible-india/videos/home/Heritage.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video5" class="bg-video">
+        <source src="https://www.incredibleindia.gov.in/content/dam/incredible-india/videos/home/Spiritual.mp4" type="video/mp4">
+    </video>
+
+        <!-- Navigation -->
+    <nav id="navBar">
+        <img src="/Images/logo.png" class="logo" alt="Staybnb Logo">
+        <ul class="nav-links">
+            <li><a href="#">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="sign up form.html" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+        <!-- Main Content: Search Bar -->
+    <div class="content">
+        <h1>Find Your Next Place</h1>
+        <div class="search-bar">
+            <form>
+                <div class="input-group">
+                    <label>Location</label>
+                    <input type="text" placeholder="Where are you going?">
+                </div>
+                <div class="input-group">
+                    <label>Check in</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Check out</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Guest</label>
+                    <input type="number" placeholder="Add Guest">
+                </div>
+                <button type="submit">
+                    <img src="/Images/search.png" alt="Search">
+                </button>
+             </form>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Container: Exclusives -->
+<div class="container">
+    <h2 class="sub-title">Exclusives</h2>
+    <div class="exclusives">
+        <div>
+            <img src="/Images/image-1.png" alt="London">
+            <span>
+                <h3>London</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-2.png" alt="Switzerland">
+            <span>
+                <h3>Switzerland</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-3.png" alt="Australia">
+            <span>
+                <h3>Australia</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-4.png" alt="France">
+            <span>
+                <h3>France</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-5.png" alt="Amsterdam">
+            <span>
+                <h3>Amsterdam</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-6.png" alt="Netherlands">
+            <span>
+                <h3>Netherlands</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-7.png" alt="New York">
+            <span>
+                <h3>New York</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-8.png" alt="Chicago">
+            <span>
+                <h3>Chicago</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-9.png" alt="San Francisco">
+            <span>
+                <h3>San Francisco</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/image-10.png" alt="Shanghai">
+            <span>
+                <h3>Shanghai</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+        <div>
+            <img src="/Images/download.jpeg" alt="Japan">
+            <span>
+                <h3>Japan</h3>
+                <p>Starts @ $250</p>
+            </span>
+         </div>
+         <div>
+            <img src="/Images/2022-12-30.jpg" alt="India">
+            <span>
+                <h3>India</h3>
+                <p>Starts @ $250</p>
+            </span>
+        </div>
+    </div>
+
+    <!-- Attractions Section -->
+    <h2 class="sub-title">Attractions</h2>
+    <div class="attractions-slider">
+        <input type="radio" name="attraction" id="slide1" checked>
+        <input type="radio" name="attraction" id="slide2">
+        <input type="radio" name="attraction" id="slide3">
+        <input type="radio" name="attraction" id="slide4">
+        <input type="radio" name="attraction" id="slide5">
+        <input type="radio" name="attraction" id="slide6">
+        <input type="radio" name="attraction" id="slide7">
+        <input type="radio" name="attraction" id="slide8">
+        <input type="radio" name="attraction" id="slide9">
+        <input type="radio" name="attraction" id="slide10">
+        
+        <div class="slides"> 
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://media.architecturaldigest.com/photos/5900cc370638dd3b70018b33/16:9/w_2560%2Cc_limit/Secrets%2520of%2520Louvre%25201.jpg" alt="Louvre Museum">
+                    <h3>Louvre Museum</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://www.kcpinternational.com/wp-content/uploads/2011/07/Spring-in-Tokyo.jpg" alt="Cherry Blossoms">
+                    <h3>Cherry Blossoms</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="/Images/download (1).jpeg">
+                    <h3>Scuba Diving</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://www.strogilisantorini.com/blog/user/pages/01.home/22.10-best-santorini-blue-domes-churches/santorini-blue-domes.jpg" alt="Blue doomed churches">
+                    <h3>Blue Doomed Churches</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://www.allrecipes.com/thmb/jiV_4f8vXFle1RdFLgd8-_31J3M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229960-shrimp-scampi-with-pasta-DDMFS-4x3-e065ddef4e6d44479d37b4523808cc23.jpg" alt="Cuisine">
+                    <h3>Cuisine</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://cdn.mos.cms.futurecdn.net/XsbvTN6PRi6PZtgEGvRsiE-1200-80.jpg" alt="Statue of Liberty">
+                    <h3>Statue of Liberty</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="/Images/download (2).jpeg" alt="Beaches">
+                    <h3>Beaches</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://visitsou.com/wp-content/uploads/15-The-Statue-of-Unity-A-Tribute-to-Unity-and-Heritage.jpg" alt="Statue of Unity">
+                    <h3>Statue of Unity</h3>
+                </div>
+            </div>    
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0V5JazZ39xM6How3IeVamW75Bf86Yws_emA&s" alt="Festival">
+                    <h3>Festival</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPVRyqNwBkPGFTPdcqXJRH_9UD9iRY3nZyUu3xB=s294-w294-h220-k-no" alt="Chichén Itzá">
+                    <h3>Chichén Itzá</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="nav-arrows">
+        <label for="slide" class="prev">&#10094;</label>
+        <label class="next">&#10095;</label>
+    </div>
+
+<!---Trending Section--->
+    <h2 class="sub-title">Trending Places</h2>
+    <div class="trending">
+        <div>
+            <img src="/Images/dubai.png" alt="Dubai">
+            <h3>Dubai</h3>
+        </div>
+        <div>
+            <img src="/Images/new-york.png" alt="New York">
+            <h3>New York</h3>
+        </div>
+        <div>
+            <img src="/Images/paris.png" alt="Paris">
+            <h3>Paris</h3>
+        </div>
+        <div>
+            <img src="/Images/new-delhi.png" alt="New Delhi">
+            <h3>New Delhi</h3>
+        </div>
+    </div>
+    
+    <div class="cta">
+        <h3>Sharing Is <br> Earning Now</h3>
+        <p>Great Opportunity to make money by <br> sharing your extra space.</p>
+        <a href="#" class="cta-btn">Know More</a>
+    </div>
+
+    <h2 class="sub-title">Travel Diaries</h2>
+    <div class="stories">
+        <div>
+            <img src="/Images/story-1.png" alt="Travel Story 1">
+            <p>Popular European countries with a budget of just $10,000</p>
+        </div>
+        <div>
+            <img src="/Images/story-2.png" alt="Travel Story 2">
+            <p>Traveled more than 100 Countries in less than a year</p>
+        </div>
+        <div>
+            <img src="/Images/story-3.png" alt="Travel Story 3">
+            <p>Best experience you get while traveling to Thailand</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/tienda-com/image/upload/f_auto/q_auto/c_fill,w_372/dpr_2.0/v1/learn-about-spain/spanish-people-feria-del-pilar-dancers-0411" alt="Travel Story 5">
+            <p>Meeting people with different perspectives expands our understanding</p>
+        </div>
+        <div>
+            <img src="/Images/download (3).jpeg" alt="Travel Story 6">
+            <p>Celebrate their festivals with joy, creating vibrant and meaningful traditions</p>
+        </div>
+    </div>
+
+    <a href="#" class="start-btn">Start making money </a>
+
+    <div class="about-msg">
+    <h2>About Staybnb</h2>
+    <p>StayBNB is a user-friendly travel website designed to offer travelers a variety of short-term rental options. Whether you're looking for a cozy apartment, a luxurious villa, or a unique stay experience, StayBNB connects you with hosts offering accommodations in various cities worldwide. The platform emphasizes convenience and security, with features such as verified listings, easy booking, and secure payment options. StayBNB also offers personalized recommendations based on your preferences, ensuring that each stay meets your travel needs, whether for business or leisure.</p>
+    </div>
+
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+        <p>copyright © 2021 , Easy tutorial</p>
+    </div>
+</div>
+    
+</body>
+</html>
